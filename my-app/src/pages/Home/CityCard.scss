@@ -1,0 +1,117 @@
+.travel-list-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .travel-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .city-card {
+    position: relative;
+    width: 350px;
+    height:450px;
+    overflow:hidden;
+    border-radius:10px;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    img{
+        object-fit: cover;
+        border-radius:20px;
+        height:600px;
+    }
+    .city{
+       display: block;
+    }
+
+    overflow: hidden;
+  }
+  
+  .city-image {
+    width: 100%;
+    height:100%;
+    display: block;
+    object-fit: cover;
+    overflow:hidden;
+  }
+  
+  .city-info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    color: white;
+    opacity: 0;
+    transition: bottom 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  
+  .image-container:hover .city-info {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  /* Pagination Styles */
+  .pagination {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pagination button {
+    padding: 8px 12px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .pagination button.active {
+    background: #333;
+    color: white;
+  }
+  
+  .pagination button:hover {
+    background: #555;
+    color: white;
+  }
+  .pac{
+    font-size:30px;
+    font-weight:bolder;
+    color:rgb(233, 177, 38);
+  }
+  .cou{
+    div{
+      font-size:20px;
+      font-weight: bolder;
+      color:rgb(249, 217, 137)
+    }
+    span{
+      font-size: 14px;
+      margin-left:80px;
+    }
+  }
+  .city-name{
+    font-size:31px;
+    font-weight:bolder;
+    color:gold;
+  }
+  .md{
+    color:white;
+    margin-left:85px;
+    font-style: italic;
+  }

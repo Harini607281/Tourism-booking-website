@@ -1,0 +1,81 @@
+.login{
+    height: 100vh;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .card{
+        width:50%;
+        border-radius:10px;
+        border:1px solid rgba(234, 193, 29, 0.724);
+        display: flex;
+        background-color: white;
+        min-height:500px;
+        overflow: hidden;
+        .left{
+            flex:1;
+            background: linear-gradient(rgba(178, 144, 22, 0.5), rgba(178, 144, 22, 0.5)),url("https://images.unsplash.com/photo-1501786223405-6d024d7c3b8d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODd8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D")
+          center;
+          background-size: cover;
+          padding:40px;
+          display: flex;
+          flex-direction: column;
+          gap:10px;
+          color:white;
+            h1{
+                font-size:60px;
+                line-height: 50px;
+                letter-spacing: 5.5px;
+            }
+            p{
+             font-size:14px;
+             
+            }
+            span{
+                font-size:14px;
+            }
+            button{
+                width:50%;
+                padding:10px;
+                border:none;
+                background-color: white;
+                color:chocolate;
+                font-weight:bold;
+                cursor: pointer;
+            }
+        }
+        .right{
+            flex:1;
+            padding:40px;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            gap:30px;
+
+            h1{
+                color: #555;
+            }
+            form{
+                display:flex;
+                flex-direction: column;
+                gap:35px;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgray;
+                    padding:20px 10px;
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color:orange;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-radius:3px;
+                }
+            }
+        }
+    }
+}

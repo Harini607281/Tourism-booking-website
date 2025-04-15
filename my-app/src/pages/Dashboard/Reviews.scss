@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+.reviews-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 40px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #004466;
+    margin-bottom: 20px;
+  }
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  width: 300px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    color: #006699;
+    margin-bottom: 10px;
+  }
+
+  .destination {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  .review-text {
+    font-size: 1rem;
+    font-style: italic;
+    color: #555;
+  }
+}
+
+.dashbo{
+  position: fixed;
+  top:0;
+  min-width:100%;
+  background-color:#0077b6;
+  z-index:1000;
+ 
+  .top{
+     z-index:1000;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap:200px;
+      min-width:100%;
+      padding:10px;
+     
+      
+
+      .logo{
+          font-size: 28px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color:white;
+      margin-left:20px;
+
+      }
+      .bt{
+          display: flex;
+          flex-direction: row;
+          gap:30px;
+          padding: 10px;
+          margin-right:20px;
+          .expl{
+              width:90px;
+              height:35px;
+              background-color:white ;
+              font-weight: bold;
+              color:black;
+              border-radius:50px;
+              border:1px solid black;
+          }
+          .expl:hover{
+              background-color: #257ab8;
+              color:white;
+          }
+
+              .rev{
+                  width:90px;
+                  height:35px;
+                  background-color:#ffb703;
+                  font-weight: bold;
+                  color:black;
+                  border-radius:50px;
+                  border:none;
+              }
+              .siou{
+                  width:90px;
+                  height:35px;
+                  background-color:#B0BEC5;
+                  font-weight: bold;
+                  color:black;
+                  border-radius:50px;
+                  border:none;
+                  
+              
+          }
+      }
+  }
+
+}

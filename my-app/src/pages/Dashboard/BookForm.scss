@@ -1,0 +1,76 @@
+.booking-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0099ff, #00ccff);
+    padding: 20px;
+  }
+  
+  .form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+    }
+  
+    .success-message {
+      color: green;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    .input-group {
+      margin-bottom: 15px;
+      text-align: left;
+      width:94.5%;
+  
+      label {
+        display: block;
+        font-weight: bold;
+        color: #555;
+        margin-bottom: 5px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: 0.3s;
+  
+        &:focus {
+          border-color: #0099ff;
+          box-shadow: 0 0 5px rgba(0, 153, 255, 0.5);
+          outline: none;
+        }
+      }
+    }
+  
+    .submit-btn {
+      background: #0099ff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      width: 100%;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+  
+      &:hover {
+        background: #007acc;
+      }
+    }
+  }
+  
